@@ -126,7 +126,7 @@ def evaluate_purchases(purchases):
     index = 0
 
     f1=open('./genesis.csv', 'w')
-    f1.write('funding txid,conf time unix,conf time human,ed25519 pubkey,# bitcoins,rate,# factoshis,notes\n')
+    f1.write('funding txid,conf time unix,conf time human,ed25519 pubkey,# bitcoins,rate,# photons,notes\n')
 
     for p in purchases:
         if p["time"] < start + initial_period:
